@@ -2,17 +2,20 @@
 """
 Created on Sun Oct 18 18:15:10 2020
 
-@author: ROG
+@author: Reo Sahobby
 """
 
-import pygame
+import pygame, sys
 
 pygame.init()
 screen = pygame.display.set_mode((576, 1024))
+clock = pygame.time.Clock()
 
 while True:
     for event in pygame.event.get():
-        if event.type = pygame.QUIT:
-            pygame.quit
+        if event.type == pygame.QUIT:
+            pygame.quit()
+            sys.exit()
         
     pygame.display.update()
+    clock.tick(120)
